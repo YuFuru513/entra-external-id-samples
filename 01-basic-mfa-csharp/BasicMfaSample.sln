@@ -1,13 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMfaSample.Models", "BasicMfaSample.Models\BasicMfaSample.Models.csproj", "{7AEE2462-CE6A-4CD4-BCB0-269801F2069E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMfaSample.Services", "BasicMfaSample.Auth\BasicMfaSample.Services.csproj", "{7E0B81DE-1357-4482-9FDF-DA02426E53B8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMfaSample.Web", "BasicMfaSample.Web\BasicMfaSample.Web.csproj", "{22A16E50-7F60-47C2-B137-BE85F8FC4B81}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D11A2AB7-D90F-270E-C3B9-E5091641FDBC} = {D11A2AB7-D90F-270E-C3B9-E5091641FDBC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMfaSample.Services", "BasicMfaSample.Services\BasicMfaSample.Services.csproj", "{D11A2AB7-D90F-270E-C3B9-E5091641FDBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +22,14 @@ Global
 		{7AEE2462-CE6A-4CD4-BCB0-269801F2069E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AEE2462-CE6A-4CD4-BCB0-269801F2069E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AEE2462-CE6A-4CD4-BCB0-269801F2069E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7E0B81DE-1357-4482-9FDF-DA02426E53B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E0B81DE-1357-4482-9FDF-DA02426E53B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E0B81DE-1357-4482-9FDF-DA02426E53B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E0B81DE-1357-4482-9FDF-DA02426E53B8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{22A16E50-7F60-47C2-B137-BE85F8FC4B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{22A16E50-7F60-47C2-B137-BE85F8FC4B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22A16E50-7F60-47C2-B137-BE85F8FC4B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22A16E50-7F60-47C2-B137-BE85F8FC4B81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11A2AB7-D90F-270E-C3B9-E5091641FDBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11A2AB7-D90F-270E-C3B9-E5091641FDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11A2AB7-D90F-270E-C3B9-E5091641FDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11A2AB7-D90F-270E-C3B9-E5091641FDBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

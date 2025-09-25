@@ -10,9 +10,9 @@ namespace BasicMfaSample.Services.Auth
             return new AuthenticationProperties { RedirectUri = returnUrl };
         }
 
-        public AuthenticationProperties CreateSignOutProperties()
+        public AuthenticationProperties CreateSignOutProperties(string returnUrl = "/")
         {
-            return new AuthenticationProperties { RedirectUri = "/" };
+            return new AuthenticationProperties { RedirectUri = returnUrl };
         }
     }
 }
