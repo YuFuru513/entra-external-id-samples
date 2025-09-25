@@ -19,9 +19,9 @@ namespace BasicMfaSample.Web.Controllers
             return Challenge(properties, OpenIdConnectDefaults.AuthenticationScheme);
         }
 
-        public IActionResult SignOut()
+        public IActionResult SignOut(string returnUrl = "/")
         {
-            var properties = _authService.CreateSignOutProperties();
+            var properties = _authService.CreateSignOutProperties(returnUrl);
             return SignOut(properties, OpenIdConnectDefaults.AuthenticationScheme, "Cookies");
         }
     }
